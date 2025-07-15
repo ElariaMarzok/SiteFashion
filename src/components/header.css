@@ -1,0 +1,115 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10000;
+    background: transparent !important;
+    color: white;
+    box-shadow: none;
+}
+
+
+.header-left .logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 26px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.header-center .nav {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    height: 60px;
+}
+
+.header-center .nav li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+    padding: 0 4px;
+    line-height: 60px;
+    display: inline-block;
+}
+
+.header-center .nav li a:hover {
+    color: #ff3d3d;
+}
+
+.header-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 60px;
+}
+
+.header-right .icon {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 18px;
+    box-shadow: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-right .icon span {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #ff3d3d;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+}
+
+.userItems {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.userItems .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+
+}

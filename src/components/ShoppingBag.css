@@ -1,0 +1,316 @@
+/* Shopping Bag CSS */
+.shopping-bag {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Empty Bag */
+.empty-bag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.empty-bag-content {
+    text-align: center;
+    max-width: 400px;
+    padding: 40px;
+}
+
+.empty-bag-content h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.empty-bag-content p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 32px;
+}
+
+.continue-shopping-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.continue-shopping-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Bag Container */
+.bag-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.bag-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Table */
+.bag-table {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 50px 80px 1fr 60px 80px 100px 80px 100px 80px;
+    gap: 16px;
+    padding: 16px;
+    background-color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-bottom: 1px solid #444;
+}
+
+.table-body {
+    background-color: #2a2a2a;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 50px 80px 1fr 60px 80px 100px 80px 100px 80px;
+    gap: 16px;
+    padding: 16px;
+    border-bottom: 1px solid #333;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.table-row:hover {
+    background-color: #333;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+/* Column Styles */
+.col-no {
+    text-align: center;
+    font-weight: 500;
+}
+
+.col-preview {
+    display: flex;
+    justify-content: center;
+}
+
+.item-image {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.col-product {
+    padding-right: 16px;
+}
+
+.product-title {
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+.col-size {
+    text-align: center;
+}
+
+.size-badge {
+    background-color: #ef4444;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.col-price,
+.col-payment {
+    text-align: center;
+    font-weight: 500;
+}
+
+.col-qty {
+    display: flex;
+    justify-content: center;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.qty-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.qty-btn:hover {
+    background-color: #ef4444;
+}
+
+.qty-display {
+    padding: 0 8px;
+    font-weight: 500;
+    min-width: 20px;
+    text-align: center;
+}
+
+.col-discount {
+    text-align: center;
+    color: #ef4444;
+    font-weight: 500;
+}
+
+.col-remove {
+    display: flex;
+    justify-content: center;
+}
+
+.remove-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #ef4444;
+}
+
+/* Bag Footer */
+.bag-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.bag-summary {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+}
+
+.total-items,
+.total-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.checkout-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.checkout-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    .table-header,
+    .table-row {
+        grid-template-columns: 40px 60px 1fr 50px 70px 80px 60px 80px 60px;
+        gap: 8px;
+    }
+
+    .bag-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .table-row {
+        display: block;
+        padding: 20px;
+    }
+
+    .table-header {
+        display: none;
+    }
+
+    .table-row>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        padding: 8px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    .table-row>div:before {
+        content: attr(data-label);
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .bag-summary {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
