@@ -18,13 +18,11 @@ export const AppContext = createContext();
 function App() {
   
   const [items, setItems] = useState(itemsData.items);
-  // const [selectedItem, setSelectedItem] = useState(
-  //   itemsData.items.find(item => item.active === true)
-  // );
+  
   const [selectedItem, setSelectedItem] = useState(null);
 
   
-
+//routing for the app
 
   return (
    

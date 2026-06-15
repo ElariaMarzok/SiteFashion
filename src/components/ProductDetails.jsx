@@ -50,7 +50,7 @@ const ProductDetails = () => {
   const handleKeepBrowsing = () => {
     window.history.back();
   };
-
+// all the details here 
   return (
     <div className="product-details">
       <div className="product-container">
